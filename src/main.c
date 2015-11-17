@@ -111,7 +111,19 @@ int main(void)
   GPIOC->BSRR = GPIO_BSRR_BR_5;
   GPIOC->BSRR = GPIO_BSRR_BR_4;
 
+  /* initialize timer 2 with a prescaler of 40000 and a period of 500 */
+  TIM_TimeBaseInitTypeDef timerInitStructure; 
+  timerInitStructure.TIM_Prescaler = 40000;
+  timerInitStructure.TIM_CounterMode = TIM_CounterMode_Up;
+  timerInitStructure.TIM_Period = 500;
+  timerInitStructure.TIM_ClockDivision = TIM_CKD_DIV1;
+  timerInitStructure.TIM_RepetitionCounter = 0;
+  TIM_TimeBaseInit(TIM2, &timerInitStructure);
+  TIM_Cmd(TIM2, ENABLE);
+  
+  
 
+  /* infinite loop */
   while (1)
   {
     /* show end status on leds */
