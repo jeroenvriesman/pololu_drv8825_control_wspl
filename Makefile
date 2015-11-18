@@ -48,27 +48,27 @@ SRC += ./src/stm32f0xx_it.c
 SRC += $(DEVDIR)/Source/Templates/system_stm32f0xx.c
 
 ## used parts of the STM-Library
-SRC += $(STMSPSRCDDIR)/stm32f0xx_adc.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_cec.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_crc.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_comp.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_dac.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_dbgmcu.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_dma.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_exti.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_flash.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_adc.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_cec.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_crc.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_comp.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_dac.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_dbgmcu.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_dma.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_exti.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_flash.c
 SRC += $(STMSPSRCDDIR)/stm32f0xx_gpio.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_syscfg.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_i2c.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_iwdg.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_pwr.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_syscfg.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_i2c.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_iwdg.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_pwr.c
 SRC += $(STMSPSRCDDIR)/stm32f0xx_rcc.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_rtc.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_spi.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_rtc.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_spi.c
 SRC += $(STMSPSRCDDIR)/stm32f0xx_tim.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_usart.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_wwdg.c
-SRC += $(STMSPSRCDDIR)/stm32f0xx_misc.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_usart.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_wwdg.c
+# SRC += $(STMSPSRCDDIR)/stm32f0xx_misc.c
 
 # List assembly startup source file here
 STARTUP = ./startup/startup_stm32f0xx.s
